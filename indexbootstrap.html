@@ -11,7 +11,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-color:#FF3385;">
 
 	<header class = "header">
 	
@@ -19,18 +19,18 @@
 			<div class = "container">
 				<div class = "navbar-header">
 				
-				<!-- Hide and open menu icon -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
-				
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				
-				</button>
-				
-				<!-- Logo image -->
-				<a href =""><img class = "logo" src="YoChoiceLogo.png"></a>
-					 
+					<!-- Hide and open menu icon -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+					
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					
+					</button>
+					
+					<!-- Logo image -->
+					<a href =""><img class = "logo" src="YoChoiceLogo.png"></a>
+						 
 				</div>
 				
 				<!-- Navigation bar links -->
@@ -51,10 +51,41 @@
 		<div class = "container">
 			<div class ="row">
 				
+				<!-- WELCOME STATEMENT -->
 				<div class="col-sm-6 banner-info">
-					<p>Welcome to YoChoice Shopping (PTY) LTD</p>
+				
+					<p>Welcome to YoChoice Shopping (PTY) LTD, 
+					offering style at an affordable price 
+					without compromising on quality.
+					<br><br>
+					At YoChoice we understand how skeptical it can be to pay
+					for something you see in pictures, thus we believe in 
+					giving our customers all the freedom and flexibility when 
+					buying, <strong>by allowing you to pay once the order is 
+					in your hands,</strong><span id="dots">...</span> <span id="more">
+					no deposit/registrations or commitments 
+					forced on you. Now that's what we call convenience at your
+					 finger tips!	
+			
+					 Explained better on <a href="#topMenu">About Us</a>
+					<br><br>
+					Now let your mind and fingers explore through our currently 
+					offered products. Please note that our business is still 
+					growing, more features and products are to be introduced 
+					for your convenience.<br><br>
+					<strong>Feel free to inbox us with your desired product even
+					if its not listed on our catalogue, we will definitely shop
+					around for you.</strong>
+					<br><br>
+					Inbox us on facebook or whatsapp <a href="#topMenu">Contact us</a> ,we are on standby !
+					 <strong>Take advantage of our exciting opening deals on most products!</strong>	
+					</span>
+					</p>
+					<!-- Read more or less button -->
+					<button onclick = "myFunction()" id = "myBtn">Read more</button>
+					<br><br>
 					
-					<a class = "btn btn-first" href = "#">Read more</a>
+					<a class = "btn btn-first" href = "#">Follow us</a>
 					<a class = "btn btn-first" href = "#">Subscribe</a>
 					
 					
@@ -103,12 +134,7 @@
 					        <img src="bathroom mat set - blue.jpg" alt="New york" class="img-responsive">
 					      </div>
 						
-					    </div>
-			
-		
-		
-			
-			
+					    </div>	
 					
 					    <!-- Left and right controls -->
 					    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -126,6 +152,37 @@
 		</div>
 	
 	</header>
+	
+	<footer class = "footer">
+	
+		<div class = "container">
+			Copyright[2020-08-23] YoChoice (PTY) LTD<br>
+			Developed by Mthobisi Mahlangu
+		</div>
+	
+	</footer> 
+	
+	<!-- Java script for the read less or more button -->
+	<script>
+		function myFunction(){
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+			
+			if (dots.style.display === "none"){
+				
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				moreText.style.display = "none";
+			}else{
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				moreText.style.display = "inline";
+			
+			}
+			
+		}
+	</script>
 
 </body>
 </html>
