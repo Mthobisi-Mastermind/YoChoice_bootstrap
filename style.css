@@ -5,6 +5,10 @@
 	padding : 0;
 }
 
+html body {
+	background-color:#FF3385;
+}
+
 .header{
 	height : 100vh;
 }
@@ -48,6 +52,7 @@ a.btn-second{
 	border: 1px solid darkOrange;
 	color: #333;
 }
+
 
 a.btn:hover{
 	background: darkOrange;
