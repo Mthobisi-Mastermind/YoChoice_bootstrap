@@ -61,9 +61,11 @@ a.btn:hover{
 	margin: 30px 0px;
 }
 
-.footer{
+.page-footer{
 	background-color: #A51D95;
 	text-align: center;
 	color: #141515;
 	padding: 10px;
 }
+
+#more {display: none;}
