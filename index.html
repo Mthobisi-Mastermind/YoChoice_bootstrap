@@ -16,6 +16,8 @@
 
 <body style="background-color:#FF3385;">
 
+	<div class="container">
+
 	<header class = "header">
 	
 		<nav class = "navbar navbar-style">
@@ -26,8 +28,8 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
 					
 					<span class="icon-bar">Menu</span>
-					<span class="icon-bar">Menu</span>
-					<span class="icon-bar">Menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 					
 					</button>
 					
@@ -87,6 +89,27 @@
 					<!-- Read more or less button -->
 					<button onclick = "myFunction()" id = "myBtn">Read more</button>
 					<br><br>
+					
+					<script>
+						function myFunction(){
+							var dots = document.getElementById("dots");
+							var moreText = document.getElementById("more");
+							var btnText = document.getElementById("myBtn");
+							
+							if (dots.style.display === "none"){
+								
+								dots.style.display = "inline";
+								btnText.innerHTML = "Read more";
+								moreText.style.display = "none";
+							}else{
+								dots.style.display = "none";
+								btnText.innerHTML = "Read less";
+								moreText.style.display = "inline";
+							
+							}
+							
+						}
+					</script>
 					
 					<a class = "btn btn-first" href = "#">Follow us</a>
 					<a class = "btn btn-first" href = "#">Subscribe</a>
@@ -165,26 +188,7 @@
 	</div>
 	
 	<!-- Java script for the read less or more button -->
-	<script>
-		function myFunction(){
-			var dots = document.getElementById("dots");
-			var moreText = document.getElementById("more");
-			var btnText = document.getElementById("myBtn");
-			
-			if (dots.style.display === "none"){
-				
-				dots.style.display = "inline";
-				btnText.innerHTML = "Read more";
-				moreText.style.display = "none";
-			}else{
-				dots.style.display = "none";
-				btnText.innerHTML = "Read less";
-				moreText.style.display = "inline";
-			
-			}
-			
-		}
-	</script>
 
+	</div>
 </body>
 </html>
