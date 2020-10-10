@@ -11,7 +11,10 @@ html body {
 }
 
 .sale{	
-	color: #1819D3;
+	color: blue;
+	display: inline-block;
+	background-color: darkOrange;
+	padding : 2px;
 }
 
 .header{
