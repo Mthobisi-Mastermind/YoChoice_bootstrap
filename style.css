@@ -75,6 +75,10 @@ a.btn:hover{
 	border-color: #DB8627;
 }
 
+.colPadding {
+	padding: 10px 10px;
+}
+
 .page-footer{
 	background-color: #A51D95;
 	text-align: center;
