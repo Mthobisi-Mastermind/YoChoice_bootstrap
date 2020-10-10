@@ -1,12 +1,17 @@
 @charset "ISO-8859-1";
 
-*{
+* {
 	margin : 0;
 	padding : 0;
+	box-sizing: border-box;
 }
 
 html body {
 	background-color:#FF3385;
+}
+
+.sale{	
+	color: #1819D3;
 }
 
 .header{
@@ -78,3 +83,55 @@ a.btn:hover{
 }
 
 #more {display: none;}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+	
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+	
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+	
+  padding: 5px 2px;
+  float: left;
+  width: 24.9999%;
+}
+
+@media only screen and (max-width: 900px) {	
+	
+  .responsive {
+    width: 49.9999%;
+    float: left;
+    margin: 6px 0;
+  }
+  
+  .imgResponsive {
+	height: auto;
+	text-align: center;
+    max-width: 100%;
+    border: none;
+    display: block;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+	
+  .responsive {
+    width: 100%;
+  }
+}
