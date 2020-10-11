@@ -10,6 +10,18 @@ html body {
 	background-color:#FF3385;
 }
 
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
 .sale{	
 	color: blue;
 	display: inline-block;
@@ -41,9 +53,9 @@ li a{
 	
 a.btn{
 	
-	margin: 30px 10px;
+	margin: 10px 3px;
 	width: 150px;
-	padding: 10px;
+	padding: 2px;
 	border-radius: 20px;
 	
 }
@@ -55,15 +67,28 @@ a.btn-first{
 	
 }
 
+.modalPosition{
+	
+	position: fixed;
+    top: 50px;
+    right: 0px; 
+	
+}
+
 a.btn-second{
-	background-color: transparent;
+	background-color: lightGrey;
 	border: 1px solid darkOrange;
 	color: #333;
+	position: fixed;
+    bottom: 0px;
+    right: 0px; 
+	margin: 5px 2px;
+	padding: 2px;
 }
 
 
 a.btn:hover{
-	background: darkOrange;
+	background: lightGreen;
 	border:none;
 	color:#fff;
 	box-shadow: 5px 5px 10px #999;
@@ -82,17 +107,18 @@ a.btn:hover{
 	padding: 10px 10px;
 }
 
-.page-footer{
-	background-color: #A51D95;
+.footerColor{
+	background-color: #71B09C;
 	text-align: center;
 	color: #141515;
-	padding: 10px;
+	padding: 4px;
 }
 
 #more {display: none;}
 
 div.gallery {
   border: 1px solid #ccc;
+  padding-bottom: 28px;
 }
 
 div.gallery:hover {
