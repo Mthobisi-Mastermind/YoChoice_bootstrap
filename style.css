@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-html body {
+.container-fluid {
 	background-color:#FF3385;
 }
 
@@ -76,7 +76,7 @@ a.btn-first{
 }
 
 a.btn-second{
-	background-color: lightGrey;
+	background-color: #2E8E13;
 	border: 1px solid darkOrange;
 	color: #333;
 	position: fixed;
@@ -84,6 +84,7 @@ a.btn-second{
     right: 0px; 
 	margin: 5px 2px;
 	padding: 2px;
+	z-index:1;
 }
 
 
@@ -101,6 +102,8 @@ a.btn:hover{
 
 .displayStyle{
 	border-color: #DB8627;
+	background-color: #71B09C;
+	padding: 2px;
 }
 
 .colPadding {
